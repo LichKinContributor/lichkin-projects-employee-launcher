@@ -1,0 +1,12 @@
+/**/.project
+/**/.classpath
+/**/.settings/
+/**/bin/
+/**/target/
+/**/gen/
+/**/.DS_Store
+/**/.factorypath
+/**/*.iml
+/**/.idea
+/**/dependency-reduced-pom.xml
+/**/application-localhost*.properties
