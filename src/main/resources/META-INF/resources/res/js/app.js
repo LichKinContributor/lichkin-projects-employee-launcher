@@ -1,19 +1,4 @@
 /**
- * 跳转页面
- * @param url 跳转地址
- * @param params 参数
- */
-LK.Go = function(url, params) {
-  url = _CTX + url + _MAPPING_PAGES + '?__=' + new Date().getTime();
-  if (isJSON(params)) {
-    for ( var key in params) {
-      url += '&' + key + '=' + params[key];
-    }
-  }
-  window.location.href = url;
-};
-
-/**
  * 初始化标题
  * @param title I18N标题
  * @param backUrl 返回按钮点击跳转地址
