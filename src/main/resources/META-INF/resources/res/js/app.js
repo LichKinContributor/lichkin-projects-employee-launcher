@@ -57,7 +57,7 @@ LK.initListItem = function(itemId, title, linkUrl) {
  * @param data 数据请求参数
  * @param addData 新增数据回调方法。回传当前行数据。
  */
-LK.scrollDatas = function(key, url, data, addData, apiSubUrl) {
+LK.scrollDatas = function(key, url, data, addData) {
   window[key] = {
     pageNumber : 0,
     isLastPage : false,
@@ -68,7 +68,6 @@ LK.scrollDatas = function(key, url, data, addData, apiSubUrl) {
       }
       LK.ajax({
         url : url,
-        apiSubUrl : apiSubUrl,
         data : $.extend({
           pageNumber : window[key].pageNumber
         }, data),
