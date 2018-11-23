@@ -78,15 +78,92 @@ $.LKExtendI18N({
 $.LKExtendI18N({
   'REST' : '调休',
 
+  'startDate' : '开始日期',
+  'endDate' : '截止日期',
   'reason' : '调休原因',
 });
 $.LKExtendI18N({
-  'PSS_PURCHASE_ORDER' : '采购订单',
+  'PSS_ALLOT_ORDER' : '调拨单',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_OTHER_STOCK_IN_ORDER' : '其它入库单',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_OTHER_STOCK_OUT_ORDER' : '其它出库单',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_PURCHASE_ORDER' : '采购单',
 
   'orderNo' : '订单号',
   'billDate' : '订单日期',
   'supplierName' : '供应商',
   'purchaserName' : '采购员',
   'orderAmount' : '订单金额',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_PURCHASE_RETURN_ORDER' : '采购退货单（未入库退货）',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_PURCHASE_STOCK_IN_ORDER' : '采购入库单',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'purchaseOrderNo':'采购单',
+  'purchaseBillDate':'采购日期',
+  'purchaseOrderAmount':'采购金额',
+  'supplierName' : '供应商',
+  'purchaserName' : '采购员',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_PURCHASE_STOCK_OUT_ORDER' : '采购退货单（已入库退货）',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_SELL_ORDER' : '销售单',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_SELL_RETURN_ORDER' : '销售退货单（未出库退货）',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_SELL_STOCK_IN_ORDER' : '销售退货单（已出库退货）',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
+  'remarks' : '备注',
+});
+$.LKExtendI18N({
+  'PSS_SELL_STOCK_OUT_ORDER' : '销售出库单',
+
+  'orderNo' : '订单号',
+  'billDate' : '订单日期',
   'remarks' : '备注',
 });
