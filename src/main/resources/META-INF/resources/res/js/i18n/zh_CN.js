@@ -88,6 +88,8 @@ $.LKExtendI18N({
   'orderNo' : '订单号',
   'billDate' : '订单日期',
   'remarks' : '备注',
+  'outStorageName' : '调出仓库',
+  'inStorageName' : '调入仓库',
 });
 $.LKExtendI18N({
   'PSS_OTHER_STOCK_IN_ORDER' : '其它入库单',
@@ -95,6 +97,8 @@ $.LKExtendI18N({
   'orderNo' : '订单号',
   'billDate' : '订单日期',
   'remarks' : '备注',
+  'storageType' : '入库类型',
+  'storageName' : '仓库',
 });
 $.LKExtendI18N({
   'PSS_OTHER_STOCK_OUT_ORDER' : '其它出库单',
@@ -102,6 +106,8 @@ $.LKExtendI18N({
   'orderNo' : '订单号',
   'billDate' : '订单日期',
   'remarks' : '备注',
+  'storageType' : '出库类型',
+  'storageName' : '仓库',
 });
 $.LKExtendI18N({
   'PSS_PURCHASE_ORDER' : '采购单',
@@ -118,6 +124,11 @@ $.LKExtendI18N({
 
   'orderNo' : '订单号',
   'billDate' : '订单日期',
+  'purchaseOrderNo' : '采购单号',
+  'purchaseBillDate' : '采购日期',
+  'purchaseOrderAmount' : '采购金额',
+  'supplierName' : '供应商',
+  'purchaserName' : '采购员',
   'remarks' : '备注',
 });
 $.LKExtendI18N({
@@ -125,9 +136,10 @@ $.LKExtendI18N({
 
   'orderNo' : '订单号',
   'billDate' : '订单日期',
-  'purchaseOrderNo':'采购单',
-  'purchaseBillDate':'采购日期',
-  'purchaseOrderAmount':'采购金额',
+  'storageName' : '仓库',
+  'purchaseOrderNo' : '采购单号',
+  'purchaseBillDate' : '采购日期',
+  'purchaseOrderAmount' : '采购金额',
   'supplierName' : '供应商',
   'purchaserName' : '采购员',
   'remarks' : '备注',
@@ -137,6 +149,11 @@ $.LKExtendI18N({
 
   'orderNo' : '订单号',
   'billDate' : '订单日期',
+  'purchaseOrderNo' : '采购单号',
+  'purchaseBillDate' : '采购日期',
+  'purchaseOrderAmount' : '采购金额',
+  'supplierName' : '供应商',
+  'purchaserName' : '采购员',
   'remarks' : '备注',
 });
 $.LKExtendI18N({
@@ -144,6 +161,8 @@ $.LKExtendI18N({
 
   'orderNo' : '订单号',
   'billDate' : '订单日期',
+  'salesName' : '销售员',
+  'orderAmount' : '销售金额',
   'remarks' : '备注',
 });
 $.LKExtendI18N({
@@ -151,6 +170,10 @@ $.LKExtendI18N({
 
   'orderNo' : '订单号',
   'billDate' : '订单日期',
+  'sellOrderNo' : '销售单号',
+  'sellBillDate' : '销售日期',
+  'sellOrderAmount' : '销售金额',
+  'salesName' : '销售员',
   'remarks' : '备注',
 });
 $.LKExtendI18N({
@@ -158,6 +181,10 @@ $.LKExtendI18N({
 
   'orderNo' : '订单号',
   'billDate' : '订单日期',
+  'sellOrderNo' : '销售单号',
+  'sellBillDate' : '销售日期',
+  'sellOrderAmount' : '销售金额',
+  'salesName' : '销售员',
   'remarks' : '备注',
 });
 $.LKExtendI18N({
@@ -165,5 +192,10 @@ $.LKExtendI18N({
 
   'orderNo' : '订单号',
   'billDate' : '订单日期',
+  'storageName' : '仓库',
+  'sellOrderNo' : '销售单号',
+  'sellBillDate' : '销售日期',
+  'sellOrderAmount' : '销售金额',
+  'salesName' : '销售员',
   'remarks' : '备注',
 });
