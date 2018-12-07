@@ -1,23 +1,24 @@
+LK.pluginFontSize = 16;
+LK.rowHeight = 38;
+
 /**
  * 初始化标题
  * @param title I18N标题
- * @param backUrl 返回按钮点击跳转地址
- * @param params 参数
+ * @param param 参数
+ * @param originalText 是否使用原文
  */
-LK.initTitle = function(title, backUrl, params) {
-  if (isString(backUrl)) {
-    $('.title-back').click(function() {
-      LK.Go(backUrl, params);
-    });
-  }
+LK.initTitle = function(title, param, originalText) {
+  $('.title-back').click(function() {
+    LK.GoBack(param);
+  });
   if (Array.isArray(title)) {
     var titleText = '';
     for (var i = 0; i < title.length; i++) {
-      titleText += $.LKGetI18N(title[i]);
+      titleText += originalText == true ? title[i] : $.LKGetI18N(title[i]);
     }
     $('.title .title-text').html(titleText);
   } else {
-    $('.title .title-text').html($.LKGetI18N(title));
+    $('.title .title-text').html(originalText == true ? title : $.LKGetI18N(title));
   }
 };
 
@@ -25,13 +26,49 @@ LK.initTitle = function(title, backUrl, params) {
  * 初始化列表项
  * @param itemId 列表项ID
  * @param title 列表项I18N标题
- * @param 列表项点击跳转地址
+ * @param linkUrl 列表项点击跳转地址
+ * @param param 参数
+ * @param originalText 是否使用原文
  */
-LK.initListItem = function(itemId, title, linkUrl) {
+LK.initListItem = function(itemId, title, linkUrl, param, originalText) {
   var $item = $('#' + itemId);
-  $item.children('.list-item-text').html($.LKGetI18N(title));
+  $item.children('.list-item-text').html(originalText == true ? title : $.LKGetI18N(title));
   $item.click(function() {
-    LK.Go(linkUrl);
+    LK.Go(linkUrl, param);
+  });
+};
+
+/**
+ * 创建列表对象
+ * @param $content 容器对象
+ * @param arr JSON数组
+ * @param originalText 是否使用原文
+ * @param configs 配置项
+ */
+LK.createItems = function($content, arr, originalText, configs) {
+  configs = $.extend(true, {
+    imgUrl : 'imgUrl',
+    title : 'title',
+    linkUrlPrefix : 'linkUrlPrefix',
+    linkUrl : 'linkUrl',
+    param : 'param'
+  }, configs);
+
+  $(arr).each(function() {
+    var itemId = 'item' + randomInRange(10000, 99999);
+
+    var $item = $('<div class="list-item" id="' + itemId + '"></div>').appendTo($content);
+
+    if (this[configs.imgUrl]) {
+      $item.append('<div class="list-item-img"><img src="' + _IMG + '/icons/' + this[configs.imgUrl] + '"></img></div>');
+    }
+    $item.append('<div class="list-item-text"></div>');
+    $item.append('<div class="list-item-next"><img src="' + _IMG + '/next.png" /></div>');
+
+    (function(itemId, json) {
+      LK.initListItem(itemId, json[configs.title], json[configs.linkUrlPrefix] + json[configs.linkUrl], json[configs.param], originalText);
+    })(itemId, this);
+
   });
 };
 
@@ -88,4 +125,4 @@ LK.scrollDatas = function(key, url, data, addData) {
       window[key].scrollDatas();
     }
   });
-}
+};
