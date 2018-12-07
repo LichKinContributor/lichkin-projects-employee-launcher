@@ -205,3 +205,6 @@ $.LKExtendI18N({
   'salesName' : '销售员',
   'remarks' : '备注',
 });
+$.LKExtendI18N({
+  'Report Center' : '报表中心',
+});
