@@ -19,6 +19,7 @@
     <com.lichkin.projects.attendance.version>1.0.0.RELEASE</com.lichkin.projects.attendance.version>
     <com.lichkin.projects.pss.version>1.0.0.RELEASE</com.lichkin.projects.pss.version>
     <com.lichkin.projects.temporary.version>1.0.0.RELEASE</com.lichkin.projects.temporary.version>
+    <com.lichkin.projects.report.version>1.0.0.RELEASE</com.lichkin.projects.report.version>
   </properties>
 
   <dependencies>
@@ -87,6 +88,17 @@
       <groupId>com.lichkin.projects</groupId>
       <artifactId>lichkin-projects-temporary-employee-ui</artifactId>
       <version>${com.lichkin.projects.temporary.version}</version>
+    </dependency>
+    <!-- lichkin projects report -->
+    <dependency>
+      <groupId>com.lichkin.projects</groupId>
+      <artifactId>lichkin-projects-report-employee</artifactId>
+      <version>${com.lichkin.projects.report.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.lichkin.projects</groupId>
+      <artifactId>lichkin-projects-report-employee-ui</artifactId>
+      <version>${com.lichkin.projects.report.version}</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
