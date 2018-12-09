@@ -80,6 +80,9 @@ LK.createItems = function($content, arr, originalText, configs) {
  * @param addData 新增数据回调方法。回传当前行数据。
  */
 LK.scrollDatas = function(key, url, data, addData) {
+  if (!isString(key) || !key) {
+    key = 'scrollDatas_' + randomInRange(10000, 99999);
+  }
   window[key] = {
     pageNumber : 0,
     isLastPage : false,
@@ -98,7 +101,7 @@ LK.scrollDatas = function(key, url, data, addData) {
             window[key].isLastPage = responseDatas.last;
             window[key].pageNumber = responseDatas.number + 1;
             if (responseDatas.content.length != 0) {
-              $('body').attr('style', "");
+              $body.attr('style', "");
               for (var i = 0; i < responseDatas.content.length; i++) {
                 addData(responseDatas.content[i]);
               }
@@ -107,7 +110,7 @@ LK.scrollDatas = function(key, url, data, addData) {
             window[key].isLastPage = responseDatas.length == 0;
             window[key].pageNumber++;
             if (responseDatas.length != 0) {
-              $('body').attr('style', "");
+              $body.attr('style', "");
               for (var i = 0; i < responseDatas.length; i++) {
                 addData(responseDatas[i]);
               }
@@ -120,8 +123,8 @@ LK.scrollDatas = function(key, url, data, addData) {
 
   window[key].scrollDatas();
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop() + $(this).height() >= $(document).height()) {
+  $win.scroll(function() {
+    if ($(this).scrollTop() + $(this).height() >= $doc.height()) {
       window[key].scrollDatas();
     }
   });
