@@ -59,8 +59,10 @@ LK.createItems = function($content, arr, originalText, configs) {
 
     var $item = $('<div class="list-item" id="' + itemId + '"></div>').appendTo($content);
 
-    if (this[configs.imgUrl]) {
-      $item.append('<div class="list-item-img"><img src="' + _IMG + '/icons/' + this[configs.imgUrl] + '"></img></div>');
+    var imgUrl = this[configs.imgUrl];
+
+    if (imgUrl) {
+      $item.append('<div class="list-item-img"><img src="' + LK.resolveImgSrc(imgUrl, _IMG + '/icons/') + '"></img></div>');
     }
     $item.append('<div class="list-item-text"></div>');
     $item.append('<div class="list-item-next"><img src="' + _IMG + '/next.png" /></div>');
