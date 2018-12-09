@@ -206,5 +206,19 @@ $.LKExtendI18N({
   'remarks' : '备注',
 });
 $.LKExtendI18N({
+  'userName:' : '姓名:',
+  'gender:' : '性别:',
+  'cellphone:' : '手机号码:',
+  'totalTourCount:' : '总带团次数:',
+  'todayTourCount:' : '今日带团次数:',
+  'level:' : '评分:',
+});
+$.LKExtendI18N({
+  'day' : '日',
+  'week' : '周',
+  'month' : '月',
+  'year' : '年',
+});
+$.LKExtendI18N({
   'Report Center' : '报表中心',
 });
