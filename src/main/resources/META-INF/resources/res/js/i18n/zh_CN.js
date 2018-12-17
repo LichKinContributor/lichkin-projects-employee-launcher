@@ -214,11 +214,11 @@ $.LKExtendI18N({
   'level:' : '评分:',
 });
 $.LKExtendI18N({
+  'report' : '报表中心',
+});
+$.LKExtendI18N({
   'day' : '日',
   'week' : '周',
   'month' : '月',
   'year' : '年',
-});
-$.LKExtendI18N({
-  'Report Center' : '报表中心',
 });
