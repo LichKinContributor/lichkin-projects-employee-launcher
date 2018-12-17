@@ -8,6 +8,9 @@ LK.rowHeight = 38;
  * @param originalText 是否使用原文
  */
 LK.initTitle = function(title, param, originalText) {
+  $('.title-close').click(function() {
+    LK.closeWin();
+  });
   $('.title-back').click(function() {
     LK.GoBack(param);
   });
