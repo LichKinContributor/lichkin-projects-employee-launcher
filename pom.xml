@@ -17,9 +17,11 @@
     <com.lichkin.projects.activiti.version>1.0.0.RELEASE</com.lichkin.projects.activiti.version>
     <com.lichkin.projects.app.version>1.0.0.RELEASE</com.lichkin.projects.app.version>
     <com.lichkin.projects.attendance.version>1.0.0.RELEASE</com.lichkin.projects.attendance.version>
+	<!-- 
     <com.lichkin.projects.pss.version>1.0.0.RELEASE</com.lichkin.projects.pss.version>
     <com.lichkin.projects.temporary.version>1.0.0.RELEASE</com.lichkin.projects.temporary.version>
     <com.lichkin.projects.report.version>1.0.0.RELEASE</com.lichkin.projects.report.version>
+	 -->
   </properties>
 
   <dependencies>
@@ -68,6 +70,7 @@
       <version>${com.lichkin.projects.attendance.version}</version>
     </dependency>
     <!-- lichkin projects pss -->
+	<!-- 
     <dependency>
       <groupId>com.lichkin.projects</groupId>
       <artifactId>lichkin-projects-pss-employee</artifactId>
@@ -78,7 +81,9 @@
       <artifactId>lichkin-projects-pss-employee-ui</artifactId>
       <version>${com.lichkin.projects.pss.version}</version>
     </dependency>
+	 -->
     <!-- lichkin projects temporary -->
+	<!-- 
     <dependency>
       <groupId>com.lichkin.projects</groupId>
       <artifactId>lichkin-projects-temporary-employee</artifactId>
@@ -89,7 +94,9 @@
       <artifactId>lichkin-projects-temporary-employee-ui</artifactId>
       <version>${com.lichkin.projects.temporary.version}</version>
     </dependency>
+	 -->
     <!-- lichkin projects report -->
+	<!-- 
     <dependency>
       <groupId>com.lichkin.projects</groupId>
       <artifactId>lichkin-projects-report-employee</artifactId>
@@ -100,6 +107,7 @@
       <artifactId>lichkin-projects-report-employee-ui</artifactId>
       <version>${com.lichkin.projects.report.version}</version>
     </dependency>
+	 -->
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
       <groupId>mysql</groupId>
